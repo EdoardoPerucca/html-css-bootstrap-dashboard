@@ -49,11 +49,18 @@ main .aside .aside-top .list-aside:hover {
 
 
 
-.main-inner {
+main .main-viewport {
     width: calc(100vw - 150px);
     height: calc(100vh - 70px);
     background-color: red;
 }
+
+main .main-viewport .header {
+    background-color: #FF8F00;
+    height: 125px;
+}
+
+
 
 
 
@@ -63,6 +70,10 @@ main .aside .aside-top .list-aside:hover {
 @media screen and (max-width: 768px) {
     main .aside {
         width: 70px;
+    }
+
+    main .main-viewport {
+        width: calc(100vw - 70px);
     }
 
     .main-inner {
