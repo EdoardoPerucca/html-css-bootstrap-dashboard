@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-viewport {
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    height: 70px;
+    background-color: #F8F9FA;
+}
+
+nav .nav-central .input-nav {
+    background-color: #E5E5E5;
+}
+
+nav .nav-right {
+    color: #5B5858;
+}
+
+nav .nav-right .fa-bell {
+    color: #FF8F00;
+}
+
+nav .nav-left .logo-mobile {
+    width: 40px;
+}
+
+
+
+
+
+main .aside {
+    width: 150px;
+    height: calc(100vh - 70px);
+    background-color: aqua;
+}
+
+.main-inner {
+    width: calc(100vw - 150px);
+    height: calc(100vh - 70px);
+    background-color: red;
+}
