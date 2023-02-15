@@ -37,11 +37,35 @@ nav .nav-left .logo-mobile {
 main .aside {
     width: 150px;
     height: calc(100vh - 70px);
-    background-color: aqua;
+    background-color: #0B2238;
 }
+
+main .aside .aside-top .list-aside:hover {
+    background-color: #BEBEBE;
+}
+
+
+
+
+
 
 .main-inner {
     width: calc(100vw - 150px);
     height: calc(100vh - 70px);
     background-color: red;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    main .aside {
+        width: 70px;
+    }
+
+    .main-inner {
+        width: calc(100vw - 70px);
+    }
 }

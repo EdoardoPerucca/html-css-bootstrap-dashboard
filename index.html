@@ -25,7 +25,6 @@
                     <img src="img/logo.svg" class="img-fluid d-none d-lg-block d-xl-block" alt="Logo image">
                     <img src="img/mobile-logo.png" class="img-fluid logo-mobile d-lg-none" alt="Logo mobile">
                 </div>
-               
 
                 <div class="nav-central flex-grow-1">
                     <div class="input-nav d-flex rounded overflow-hidden">
@@ -36,12 +35,29 @@
                 </div>
 
                 <div class="nav-right px-2 d-flex align-items-center gap-3">
+
                     <div class="d-flex gap-1">
                         <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block d-xl-block"></i> <i class="fa-solid fa-bars d-none d-lg-block d-xl-block"></i>
                     </div>
                     <i class="fa-solid fa-circle-question d-none d-lg-block d-xl-block"></i>
                     <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block d-xl-block"></i>
-                    <i class="fa-solid fa-bell"></i>
+                    
+                    <div class="dropdown">
+                        <a href="#" data-toggle="dropdown"><i class="fa-solid fa-bell"></i></a> 
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="">Profilo</a>
+                            </li>
+                            <li>
+                                <a href="">Profilo</a>
+                            </li>
+                            <li>
+                                <a href="">Profilo</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
             </div>
@@ -49,7 +65,36 @@
         </nav>
 
         <main class="d-flex">
-            <div class="aside">
+
+            <div class="aside d-flex flex-column justify-content-between py-3 text-white">
+
+                <div class="aside-top text-center d-flex flex-column gap-3 px-3">
+                    
+                    <div class="d-flex justify-content-center align-items-center fs-5 gap-2 py-1 list-aside">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="d-none d-md-block d-lg-block d-xl-block">Home</span> 
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center fs-5 gap-2 py-1 list-aside">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="d-none d-md-block d-lg-block d-xl-block">Stats</span> 
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center fs-5 gap-2 py-1 list-aside">
+                        <i class="fa-solid fa-signal"></i>
+                        <span class="d-none d-md-block d-lg-block d-xl-block">Signals</span> 
+                    </div>
+
+                </div>
+
+                <div class="aside-bottom text-center">
+                    
+                    <div class="d-flex justify-content-center align-items-center fs-5 gap-2">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="d-none d-md-block d-lg-block d-xl-block">Admin</span> 
+                    </div>
+
+                </div>
 
             </div>
 
