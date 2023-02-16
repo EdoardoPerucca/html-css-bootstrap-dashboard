@@ -56,8 +56,14 @@ main .main-viewport {
 }
 
 main .main-viewport .header {
-    background-color: #FF8F00;
+    background-color: #1B72E8;
     height: 125px;
+}
+
+
+
+main .header .header-left .badge {
+    background-color: #165BBA;
 }
 
 

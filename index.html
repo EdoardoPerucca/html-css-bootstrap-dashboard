@@ -66,60 +66,83 @@
 
         <main class="d-flex">
 
-            <div class="aside d-flex flex-column justify-content-between py-3 text-white">
+            <section class="aside-main">
 
-                <div class="aside-top text-center d-flex flex-column gap-3 px-3">
-                    
-                    <div class="d-flex justify-content-center align-items-center fs-5 gap-2 py-1 list-aside">
-                        <i class="fa-solid fa-house"></i>
-                        <span class="d-none d-md-block d-lg-block d-xl-block">Home</span> 
+                <div class="aside d-flex flex-column justify-content-between py-3 text-white">
+
+                    <div class="aside-top text-center d-flex flex-column gap-3 px-3">
+                        
+                        <div class="d-flex justify-content-center align-items-center fs-5 gap-2 py-1 list-aside">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="d-none d-md-block d-lg-block d-xl-block">Home</span> 
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center fs-5 gap-2 py-1 list-aside">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span class="d-none d-md-block d-lg-block d-xl-block">Stats</span> 
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center fs-5 gap-2 py-1 list-aside">
+                            <i class="fa-solid fa-signal"></i>
+                            <span class="d-none d-md-block d-lg-block d-xl-block">Signals</span> 
+                        </div>
+
                     </div>
 
-                    <div class="d-flex justify-content-center align-items-center fs-5 gap-2 py-1 list-aside">
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <span class="d-none d-md-block d-lg-block d-xl-block">Stats</span> 
-                    </div>
+                    <div class="aside-bottom text-center">
+                        
+                        <div class="d-flex justify-content-center align-items-center fs-5 gap-2">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="d-none d-md-block d-lg-block d-xl-block">Admin</span> 
+                        </div>
 
-                    <div class="d-flex justify-content-center align-items-center fs-5 gap-2 py-1 list-aside">
-                        <i class="fa-solid fa-signal"></i>
-                        <span class="d-none d-md-block d-lg-block d-xl-block">Signals</span> 
                     </div>
 
                 </div>
 
-                <div class="aside-bottom text-center">
-                    
-                    <div class="d-flex justify-content-center align-items-center fs-5 gap-2">
-                        <i class="fa-solid fa-gear"></i>
-                        <span class="d-none d-md-block d-lg-block d-xl-block">Admin</span> 
-                    </div>
+            </section>
 
-                </div>
-
-            </div>
+            
 
             <div class="main-viewport">
 
-                <section class="header d-flex justify-content-between align-items-center px-2 pe-5">
+                <section class="header d-flex justify-content-between align-items-center px-2 pe-4">
 
                     <div class="header-left">
-                        <div class="header-left-top d-flex">
-                            <h2>Boolean</h2> <span>Piano Blaze</span>
+                        <div class="header-left-top d-flex gap-2 align-items-center text-white">
+                            <h2>Boolean</h2> <span class="badge rounded-pill text-bg-primary text-white">Piano Blaze</span>
                         </div>
 
-                        <div class="header-left-top d-flex">
-                            <span>Piano Blaze</span> <span>Piano Blaze</span>
+                        <div class="header-left-top d-flex align-items-center gap-2">
+                            <span class="badge rounded-pill text-bg-primary">3 app</span> 
+                            <i class="fa-solid fa-forward-fast text-white"></i>
+
+                            <div class="badge-change d-flex gap-2">
+                                <span class="badge rounded-pill text-bg-primary d-none d-md-block d-lg-block d-xl-block">Boolean mobile</span>
+                                <span class="badge rounded-pill text-bg-primary d-none d-md-block d-lg-block d-xl-block">Boolean mobile</span>
+                                <span class="badge rounded-pill text-bg-primary d-none d-md-block d-lg-block d-xl-block">Boolean mobile</span>
+
+                                <span class="badge rounded-pill text-bg-primary bg-primary d-block d-md-none d-lg-none d-xl-none"><i class="fa-solid fa-plus"></i></span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="header-center">
-                        ola
+
+                    <div class="header-center text-white">
+                        <div>
+                            Studenti online negli ultimi 30 minuti
+                        </div>
+                        <div>
+                            125
+                        </div>
                     </div>
 
-                    <div class="header-right">
+                    <div class="header-right d-flex gap-2 align-items-center">
+
+                        <h6 class="text-white fs-6">Nuovo Studente</h6>
 
                         <button class="navbar-toggler border border-white text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="navbar-toggler-icon"><i class="fa-solid fa-plus"></i></span>
+                            <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"><i class="fa-solid fa-plus"></i></span>
                         </button>
 
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -130,51 +153,53 @@
                             </div>
 
                             <form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress2">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                    <label for="inputZip">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Check me out
+                                    </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+
+                            </form>
 
                         </div>
 
@@ -184,17 +209,22 @@
 
                 <section class="main-inner">
 
-                    <div class="row">
-                        
-                        <div class="col-12 col-md-8">
-                            ciao
-                        </div>
+                    <div class="row-container">
 
-                        <div class="col-12 col-md-4">
-                            ola
+
+                        <div class="row m-0">
+                            
+                            <div class="col-12 col-md-8">
+                                ciao
+                            </div>
+
+                            <div class="col-12 col-md-4">
+                                ola
+                            </div>   
+                            
                         </div>
-                        
                     </div>
+
 
                 </section>
         
