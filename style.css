@@ -53,6 +53,7 @@ main .main-viewport {
     width: calc(100vw - 150px);
     height: calc(100vh - 70px);
     background-color: red;
+    overflow-y: auto;
 }
 
 main .main-viewport .header {
@@ -66,6 +67,25 @@ main .header .header-left .badge {
     background-color: #165BBA;
 }
 
+
+
+main .main-inner .subtitle-main {
+    background-color: #F7F7F7;
+}
+
+main .main-inner {
+    background-color: #F8F9FA;
+}
+
+
+main .main-inner .img-main-classi {
+    width: 20px;
+    height: 20px;
+}
+
+main .tbody span {
+    background-color: ;
+}
 
 
 
