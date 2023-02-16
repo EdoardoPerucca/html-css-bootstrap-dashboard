@@ -83,9 +83,8 @@ main .main-inner .img-main-classi {
     height: 20px;
 }
 
-main .tbody span {
-    background-color: ;
-}
+
+
 
 
 
@@ -105,4 +104,19 @@ main .tbody span {
     .main-inner {
         width: calc(100vw - 70px);
     }
+
+    .my-offcanvas {
+        width: 100%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+    
+    .my-form-row {
+        flex-direction: column;
+    }
+    
 }
