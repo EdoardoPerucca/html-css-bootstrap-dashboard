@@ -26,6 +26,44 @@ nav .nav-right .fa-bell {
     color: #FF8F00;
 }
 
+
+
+nav .nav-right .dropbtn {
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+  
+nav .nav-right .dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+nav .nav-right .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    z-index: 1;
+    right: 0px;
+    cursor: pointer;
+    background-color: white;
+    border: solid 0.1px;
+    border-radius: 10px;
+}
+  
+nav .nav-right .dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+nav .nav-right .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
 nav .nav-left .logo-mobile {
     width: 40px;
 }
@@ -118,5 +156,8 @@ main .main-inner .img-main-classi {
     .my-form-row {
         flex-direction: column;
     }
-    
+
+    table .table-none {
+        display: none;
+    }
 }
